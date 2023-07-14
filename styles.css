@@ -2,24 +2,65 @@
 
 }
 
+@font-face {
+    font-family: digital-7;
+    src: url(digital-7/digital-7.ttf);
+}
+
 /* general style properties */
 
+div.header {
+    background-color: rgba(66, 57, 57, 0.842);
+    display: flex;
+    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a  {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;  
+}
+
+ul {
+    list-style: none;
+}
+    
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
 .calculator {
-    border: 1px solid black;
+    border: 3px solid whitesmoke;
     height: 450px;
     width: 280px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 15px;
+    border-radius: 12px;
+    background-color: rgba(66, 57, 57, 0.842);
 
 }
 
 .calculator > div.display {
+    font-family: digital-7, sans-serif;
+    font-size: x-large;
     background-color: rgb(9, 85, 9);
     height: 35px;
     padding: 15px;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
     border-radius: 10px
+    
 }
 
 .calculator > div.btns {
@@ -30,6 +71,17 @@
 
 .calculator > div.btns > button {
     min-height: 50px;
+    border-radius: 9px;
+    font-size: large;
+
+}
+
+.calculator > div.btns > .operator {
+    background-color:  rgb(9, 85, 9);
+}
+
+.calculator > div.btns > .numBtn{
+    background-color:  rgb(66, 57, 57);
 }
 
 /* controls the layout of the buttons */
